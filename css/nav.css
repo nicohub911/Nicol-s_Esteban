@@ -1,0 +1,65 @@
+#myNav{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 900;
+}
+#myNav > ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+}
+#myNav ul li > a{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+#myNav ul li > a:hover{
+    font-weight: 600;
+}
+#myNav ul li > a::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: 0px;
+    height: 2px;
+    width: 0px;
+    background-color: #fff;
+    display: block;
+}
+#myNav ul li > a:hover::before {
+    left: calc(100% + 1rem - 5px);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: hoverNavOption 0.3s linear;
+}
+@keyframes hoverNavOption {
+    0% {
+        top: calc(50% - 1px);
+        left: 0px;
+        width: 0px;
+        height: 2px;
+    }
+    25%{
+        width: calc(100% + 1rem);
+    }
+    50%{
+        left: 0px;
+        height: 2px;
+    }
+    99%{
+        top: calc(50% - 1px);
+    }
+    100%{
+        top: calc(50% - 2.5px);
+        left: calc(100% + 1rem - 5px);
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+    }
+}

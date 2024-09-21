@@ -1,0 +1,73 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    animation: overflow_State 4s linear 1;
+}
+@keyframes overflow_State {
+    0%{
+        overflow-y: hidden;
+    }
+    99.9%{
+        overflow-y: hidden;
+    }
+    100%{
+        overflow-y: auto;
+    }
+}
+.welcome{
+    background-color: #cecece;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    z-index: 999;
+    opacity: 0;
+    animation: welcome_opacity 4s linear 1;
+}
+.welcome > span{
+    font-size: 1rem;
+    color: #303030;
+    font-family: sans-serif;
+    font-weight: bold;
+    filter: drop-shadow(1.3rem 1.3rem 1px #505050);
+}
+.welcome > b{
+    font-size: 1rem;
+    color: #303030;
+    font-weight: bold;
+    font-family: sans-serif;
+    filter: drop-shadow(1.3rem 1.3rem 1px #505050);
+    animation: show_line 0.6s ease-in-out infinite;
+}
+@keyframes welcome_opacity {
+    0%{
+        left: 0px;
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    99.9%{
+        left: 0px;
+        opacity: 0;
+    }
+    100%{
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes show_line {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

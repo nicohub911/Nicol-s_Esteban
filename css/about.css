@@ -1,0 +1,48 @@
+.main_about{
+    width: 55%;
+    min-height: 100vh;
+    margin-left: 45%;
+    margin-top: -100vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_about > img{
+    width: 30%;
+    max-width: 350px;
+    border-radius: 5px;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+.main_about > p{
+    width: 100%;
+    color: #fff;
+    font-size: 1.8vw;
+    text-align: center;
+    font-family: sans-serif;
+    filter: drop-shadow(0px 0px 2px #000);
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+.main_about p > span{
+    font-family: "Playwrite CU", cursive;
+    font-size: 2.2vw;
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}

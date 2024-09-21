@@ -1,0 +1,71 @@
+.main_portfolio{
+    width: 55%;
+    min-height: 100vh;
+    margin-left: 45%;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+}
+.main_portfolio_card{
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+.main_portfolio_card > img{
+    width: 100%;
+}
+.main_portfolio_card > h5{
+    position: absolute;
+    top: 5%;
+    font-size: 2vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.main_portfolio_card_cont{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: calc(100% - 45px);
+    background-color: #1b1b1b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.main_portfolio_card_cont > svg{
+    width: 40px;
+}
+.main_portfolio_card_cont a > svg{
+    width: 30px;
+    transition: filter 0.2s;
+} 
+.main_portfolio_card_cont a > svg:hover{
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 10%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}

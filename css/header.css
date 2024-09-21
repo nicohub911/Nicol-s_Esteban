@@ -1,0 +1,72 @@
+html{
+    scrollbar-width: thin;
+    
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+}
+.banner > img{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    min-width: 1500px;
+    z-index: 1;
+    opacity: 0.5;
+}
+.banner_border{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+.banner_border_container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    position: relative;
+}
+.banner_border_container > span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: -18px;
+    left: 0px;
+}
+.banner_border_container > img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #777777;
+    position: absolute;
+    top: 10px;
+    left: calc(100% - 110px);
+}
+.banner_border_container > h2{
+    text-align: end;
+    font-family: "Montserrat", sans-serif;
+    font-size: 6vw;
+    font-weight: 200;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    line-height: 6vw;
+}
+.banner_border_container h2 > span{
+    font-size: 4vw;
+    font-weight: 300;
+    color: inherit;
+}
