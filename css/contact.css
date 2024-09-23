@@ -1,7 +1,16 @@
+@media only screen and (min-width: 800px){
+    .main_Contact{
+        width: 55%;
+        margin-left: 45%;
+    }
+}
+@media only screen and (max-width: 799px){
+    .main_Contact{
+        width: 100%;
+    }
+}
 .main_Contact{
-    width: 55%;
     min-height: 100vh;
-    margin-left: 45%;
     display: flex;
     justify-content: center;
     align-items: center;

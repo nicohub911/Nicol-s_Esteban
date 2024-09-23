@@ -1,7 +1,16 @@
+@media only screen and (min-width: 800px){
+    .main_portfolio{
+        width: 55%;
+        margin-left: 45%;
+    }
+}
+@media only screen and (max-width: 799px){
+    .main_portfolio{
+        width: 100%;
+    }
+}
 .main_portfolio{
-    width: 55%;
     min-height: 100vh;
-    margin-left: 45%;
     padding: 100px 0px;
     display: flex;
     align-items: center;

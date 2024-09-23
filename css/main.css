@@ -20,25 +20,35 @@
     animation-timeline: --reveal;
     animation-range: entry 25% cover 10%;
 }
-.main_aside{
-    width: 45%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 5%;
-    margin-top: -10%;
-    position: sticky;
-    top: 0px;
+@media only screen and (max-width: 799px){
+    .main_aside{
+        display: none;
+    }
+    .main_navHolder{
+        background-color: #1b1b1b;
+    }
 }
-.main_aside > h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 300;
-    color: #fff;
-}
-.main_aside h2 > span{
-    font-size: 1.8vw;
+@media only screen and (min-width: 800px){
+    .main_aside{
+        width: 45%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5%;
+        margin-top: -10%;
+        position: sticky;
+        top: 0px;
+    }
+    .main_aside > h2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.5vw;
+        font-weight: 300;
+        color: #fff;
+    }
+    .main_aside h2 > span{
+        font-size: 1.8vw;
+    }
 }
 @keyframes show {
     from{
